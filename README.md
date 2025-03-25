@@ -1,5 +1,5 @@
 # Bat-Converter
-Набір .bat файлів, які конвертують різні формати файлів. Після першого запуску завантажить [FFmpeg](https://ffmpeg.org/) та [[yt-dlp](https://github.com/yt-dlp/yt-dlp)]
+Набір .bat файлів, які конвертують різні формати файлів. Після першого запуску завантажить [FFmpeg](https://ffmpeg.org/) та [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 ## Які речі може робити цей набір?
 1. Зображення\відео у gif
