@@ -21,8 +21,8 @@
             text-decoration: none;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease, transform 0.2s ease;
-            margin-top: 20px; /* Додано відступ зверху */
-            margin-bottom: 20px; /* Додано відступ знизу */
+            /* margin-top: 20px;  Видалено, оскільки відступ буде забезпечений padding-top на body */
+            /* margin-bottom: 20px; Видалено, оскільки відступ буде забезпечений padding-top на body */
             position: absolute; /* Абсолютне позиціонування */
             top: 10px;          /* Верхній відступ */
             right: 10px;        /* Правий відступ */
@@ -36,11 +36,41 @@
         .support-button span {
             margin-left: 8px;
         }
+
+        /* Стилі для кнопки "На головну" */
+        .home-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #4299e1; /* Інший колір для відмінності */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            /* margin-top: 20px;  Видалено, оскільки відступ буде забезпечений padding-top на body */
+            /* margin-bottom: 20px; Видалено, оскільки відступ буде забезпечений padding-top на body */
+            position: absolute; /* Абсолютне позиціонування */
+            top: 10px;          /* Верхній відступ */
+            left: 10px;         /* Лівий відступ */
+        }
+
+        .home-button:hover {
+            background-color: #ff6b81;
+            transform: translateY(-2px);
+        }
+
+        .home-button span {
+            margin-left: 8px;
+        }
+
         /* Загальні стилі */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 60px 0 0 0; /* Додано padding-top для відступу від кнопок */
             background-color: #121212; /* Темний фон для крутості */
             color: #fff;
             line-height: 1.7; /* Збільшений міжрядковий інтервал для зручності читання */
@@ -48,7 +78,7 @@
 
         .container {
             max-width: 900px; /* Розширений контейнер */
-            margin: 50px auto;
+            margin: 20px auto; /* Змінено margin-top для кращого розташування після padding-top body */
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.08); /* Прозорий контейнер */
             border-radius: 12px; /* Більш закруглені кути */
@@ -138,15 +168,15 @@
         a:active {
         text-decoration: none;
         }
-
-
-
     </style>
 </head>
 <body>
+    <a href="https://kuudere-phile.github.io/kuuderephile/" target="_blank" class="home-button">
+        <span>На головну</span>
+    </a>
     <a href="https://kuudere-phile.github.io/donate/" target="_blank" class="support-button">
         <span>Підтримати розробника</span>
-    </a><br>
+    </a>
     <div class="container">
         <h1>Bat-Converter</h1>
         <p>
